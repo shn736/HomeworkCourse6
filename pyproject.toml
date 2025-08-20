@@ -1,0 +1,28 @@
+[project]
+name = "homeworkcourse6"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "shn73",email = "shn-73@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.3.0"
+pytest = "^8.4.1"
+
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.17.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+
